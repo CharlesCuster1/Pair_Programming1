@@ -12,9 +12,15 @@
       href="{{ url_for('static', filename='css/stylesheet.css') }}"
     />
     <title>{{ pageTitle }}</title>
+    
   </head>
 
   <body>
     <div class="container">{% block body %}xx {% endblock %}</div>
+    <div>
+      <link rel="/about" href="./templates/about.html" />
+      <link rel="/" href="./templates/index.html" />
+    </div>
+    
   </body>
 </html>
