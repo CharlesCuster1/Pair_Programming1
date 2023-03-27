@@ -14,7 +14,7 @@ def index():
     )
 
 @app.route("/about", methods=["GET", "POST"])
-def index():
+def about():
     return render_template(
         "about.html", pageTitle="Web form template", friends=friends_dict
     )
