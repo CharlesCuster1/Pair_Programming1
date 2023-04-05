@@ -62,10 +62,8 @@ def add():
         )  # append this dictionary entry to the larger friends dictionary
         print(friends_dict)
 
-        flash(
-            "The friend ;" + fname + " has been added to the database.",
-            "success",
-        )
+       flash('Record successfully added.', 'success')
+    
         return redirect(url_for("index"))
     else:
         return redirect(url_for("index"))
